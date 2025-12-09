@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calamity</title>
+    <link rel="stylesheet" href="calamitystyles.css">
+    <script>
+        // Apply theme from localStorage before the page loads to prevent flashing
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') document.documentElement.classList.add('light-mode');
+    </script>
+</head>
+<body>
+
+        <nav class="navbar">
+        <a href="index.html" class="navbar-brand">Calamity Fandom/Wiki</a>
+        <div class="nav-right-section">
+            <div class="search-container" id="search-container">
+                <input type="text" class="search-input" id="search-input" placeholder="Search..." aria-label="Search through site content">
+                <button class="search-button" id="search-button" title="Search" aria-label="Search">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21L16.65 16.65" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-controls">
+                <button class="search-toggle" id="search-toggle" title="Toggle search bar" aria-label="Toggle search bar">
+                     <svg class="menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="menu-container">
+                    <button class="menu-toggle" id="menu-toggle" title="Toggle navigation menu" aria-label="Toggle navigation menu">
+                        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu" id="dropdown-menu">
+                        <li class="dropdown-item"><a href="index.html">Overview</a></li>
+                        <li class="dropdown-item"><a href="bosses.html">Bosses</a></li>
+                        <li class="dropdown-item"><a href="weapons.html">Weapons</a></li>
+                        <li class="dropdown-item"><a href="structures.html">Structures</a></li>
+                        <li class="dropdown-item"><a href="items.html">Items</a></li>
+                        <li class="dropdown-item"><a href="consumables.html">Consumables</a></li>
+                        <li class="dropdown-item"><a href="crafting-stations.html">Crafteing Stations</a></li>
+                        <li class="dropdown-item"><a href="npcs.html">NPCs</a></li>
+                        <li class="dropdown-item"><a href="enemies.html">Enemies</a></li>
+                        <li class="dropdown-item"><a href="blockes.html">Blocks</a></li>
+                        <li class="dropdown-item"><a href="extra-addons.html">Extra Addons?</a></li>
+                        <li class="dropdown-item"><a href="settings.html">Settings</a></li>
+                        <li class="dropdown-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
